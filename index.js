@@ -1,4 +1,6 @@
 var fs = require('fs');
+const punycode = require('punycode');
+
 var extractCharData = function(cData)
 {
   let charDataLines = cData.split("\n");
@@ -24,9 +26,11 @@ var extractCharData = function(cData)
     }
     else
     {
-      for(let j=0;j<line.length;j++)
+      let codepoints = punycode.ucs2.decode(line);
+      for(let j=0;j<codepoints.length;j++)
       {
-        res.chars[line[j]] = charCount;
+        c = punycode.ucs2.encode([codepoints[j]]);
+        res.chars[c] = charCount;
         charCount++;
       }
     }

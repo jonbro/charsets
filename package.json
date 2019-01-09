@@ -1,0 +1,8 @@
+{
+  "name": "charsets",
+  "version": "1.0.0",
+  "description": "home computer character sets",
+  "main": "index.js",
+  "author": "Jonathan Brodsky",
+  "license": "MIT"
+}

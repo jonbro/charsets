@@ -1,8 +1,14 @@
 {
   "name": "charsets",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "home computer character sets",
   "main": "index.js",
+  "scripts": {
+    "test": "node test/test.js"
+  },
   "author": "Jonathan Brodsky",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "string.prototype.codepointat": "^0.2.1"
+  }
 }

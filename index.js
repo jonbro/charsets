@@ -24,6 +24,15 @@ var extractCharData = function(cData)
       dim = [parseInt(dim[0].trim()), parseInt(dim[1].trim())];
       res.dim = dim;
     }
+    else if(readline==2)
+    {
+      let box = line.split(",");
+      for(let j=0;j<box.length;box++)
+      {
+        box[i] = parseInt(box[i].trim());
+      }
+      res.box = box;
+    }
     else
     {
       let codepoints = punycode.ucs2.decode(line);

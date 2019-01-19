@@ -27,7 +27,7 @@ var extractCharData = function(cData)
     else if(readline==2)
     {
       let box = line.split(",");
-      for(let j=0;j<box.length;box++)
+      for(let j=0;j<box.length;j++)
       {
         box[j] = parseInt(box[j].trim());
       }

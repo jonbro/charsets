@@ -2,6 +2,9 @@
 c64_petscii.png
 // second line: map dimensions
 16, 10
+// third line: gui elements (box, starting from noon, going around clockwise
+71,72,88,104,103,102,86,70
+// the rest is the character set layout
  ABCDEFGHIJKLMNO
 PQRSTUVWXYZ[ ]  
 @!"#$%&'()*+,-./

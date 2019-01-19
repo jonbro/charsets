@@ -29,7 +29,7 @@ var extractCharData = function(cData)
       let box = line.split(",");
       for(let j=0;j<box.length;box++)
       {
-        box[i] = parseInt(box[i].trim());
+        box[j] = parseInt(box[j].trim());
       }
       res.box = box;
     }

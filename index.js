@@ -39,6 +39,10 @@ var extractCharData = function(cData)
       for(let j=0;j<codepoints.length;j++)
       {
         c = punycode.ucs2.encode([codepoints[j]]);
+        if(c == "\r")
+        {
+          continue;
+        }
         if(res.chars[c] == undefined)
         {
           res.chars[c] = charCount;
